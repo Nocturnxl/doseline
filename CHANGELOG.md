@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-10-27
+
 ### Fixed
 
 - History: the *Escalated* tag overlapped the "late · due" text. The status column is now wide enough for both tags, and they wrap instead of overflowing.
@@ -141,5 +143,6 @@ First public release.
 - Notifications for three or more overdue medications were cut off; they now summarize as "and N more".
 - Wording of the single-dose escalated alarm.
 
-[Unreleased]: https://github.com/Nocturnxl/doseline/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Nocturnxl/doseline/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/Nocturnxl/doseline/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/Nocturnxl/doseline/releases/tag/v1.0.0

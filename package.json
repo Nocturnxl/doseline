@@ -1,7 +1,7 @@
 {
   "name": "doseline",
   "productName": "Doseline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal medication tracker with local alarms and Google Calendar sync",
   "homepage": "https://github.com/Nocturnxl/doseline#readme",
   "repository": {
