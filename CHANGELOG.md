@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Fixed
+
+- History: the *Escalated* tag overlapped the "late · due" text. The status column is now wide enough for both tags, and they wrap instead of overflowing.
+
 ## [1.0.0] - 2026-10-27
 
 First public release.

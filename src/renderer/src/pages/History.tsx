@@ -135,7 +135,7 @@ export function HistoryPage() {
                   <div className="log-row" key={l.id}>
                     <time className="num">{fmtTime(l.takenAt, zone)}</time>
                     {m ? <MedChip name={m.name} color={m.color} strength={m.strength} /> : <span className="muted">Deleted medication</span>}
-                    <span className="row" style={{ gap: 4 }}>
+                    <span className="log-status">
                       <span className={`pill ${l.kind}`}>{l.kind === 'taken' ? 'Taken' : 'Skipped'}</span>
                       {l.escalatedAt && (
                         <span

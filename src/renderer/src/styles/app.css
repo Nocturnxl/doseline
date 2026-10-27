@@ -686,7 +686,7 @@
 }
 .log-row {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1.3fr) 110px minmax(0, 1fr) auto;
+  grid-template-columns: 76px minmax(0, 1.3fr) 176px minmax(0, 1fr) auto;
   align-items: center;
   gap: 14px;
   padding: 10px 16px;
@@ -700,6 +700,14 @@
 }
 .log-row time {
   font-weight: 560;
+}
+/* Status pills wrap within their column rather than spilling into the due text. */
+.log-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
 }
 
 /* ---------- Adherence ---------- */
