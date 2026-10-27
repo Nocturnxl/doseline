@@ -1,0 +1,85 @@
+/* Design tokens. Dark is the primary theme; light is equally specified. */
+:root {
+  --font: 'Geist Variable', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+  --radius-sm: 8px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 180ms;
+  --titlebar-h: 44px;
+  --sidebar-w: 224px;
+  --shadow-pop: 0 18px 48px -12px rgb(0 0 0 / 0.55), 0 2px 6px rgb(0 0 0 / 0.25);
+  --focus: 0 0 0 2px var(--surface-0), 0 0 0 4px var(--accent);
+}
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --window: #0c0e12;
+  --chrome: rgb(12 14 18 / 0.86);
+  --surface-0: #111319;
+  --surface-1: #171a21;
+  --surface-2: #1d2129;
+  --surface-3: #252a34;
+  --surface-inset: #0e1015;
+  --border: rgb(255 255 255 / 0.07);
+  --border-strong: rgb(255 255 255 / 0.12);
+  --text: #eceef3;
+  --text-2: #a7aebb;
+  --text-3: #808898;
+  --accent: #7aa2ff;
+  --accent-hover: #93b4ff;
+  --accent-ink: #0a1126;
+  --accent-soft: rgb(122 162 255 / 0.14);
+  --success: #52c98e;
+  --success-soft: rgb(82 201 142 / 0.14);
+  --warning: #f1b65a;
+  --warning-soft: rgb(241 182 90 / 0.14);
+  --danger: #f2626a;
+  --danger-soft: rgb(242 98 106 / 0.14);
+  --track: rgb(255 255 255 / 0.07);
+  --scrim: rgb(4 6 10 / 0.6);
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 1px 2px rgb(0 0 0 / 0.3);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --window: #e9ecf1;
+  --chrome: rgb(233 236 241 / 0.86);
+  --surface-0: #f6f7f9;
+  --surface-1: #ffffff;
+  --surface-2: #f0f2f5;
+  --surface-3: #e5e8ee;
+  --surface-inset: #eef0f4;
+  --border: rgb(17 24 39 / 0.08);
+  --border-strong: rgb(17 24 39 / 0.14);
+  --text: #141821;
+  --text-2: #4a5263;
+  --text-3: #687183;
+  --accent: #3b62db;
+  --accent-hover: #2f54c8;
+  --accent-ink: #ffffff;
+  --accent-soft: rgb(59 98 219 / 0.1);
+  --success: #17804f;
+  --success-soft: rgb(23 128 79 / 0.1);
+  --warning: #9a5b00;
+  --warning-soft: rgb(196 125 10 / 0.12);
+  --danger: #c9313a;
+  --danger-soft: rgb(201 49 58 / 0.1);
+  --track: rgb(17 24 39 / 0.08);
+  --scrim: rgb(20 24 33 / 0.32);
+  --shadow-card: 0 1px 2px rgb(17 24 39 / 0.05), 0 1px 1px rgb(17 24 39 / 0.03);
+  --shadow-pop: 0 18px 48px -12px rgb(17 24 39 / 0.25), 0 2px 6px rgb(17 24 39 / 0.08);
+}
+
+/* Mica: let the system material show through the window chrome. */
+[data-mica='true'][data-theme='dark'] {
+  --window: transparent;
+  --chrome: transparent;
+}
+[data-mica='true'][data-theme='light'] {
+  --window: transparent;
+  --chrome: transparent;
+}

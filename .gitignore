@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+
+# Build output
+out/
+dist/
+release/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# Installers, executables and packaged artifacts (published as GitHub Release assets only)
+*.exe
+*.msi
+*.msix
+*.appx
+*.blockmap
+*.nupkg
+*.zip
+*.7z
+latest*.yml
+builder-debug.yml
+builder-effective-config.yaml
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*.spc
+client_secret*.json
+credentials*.json
+oauth-client*.json
+*token*.json
+*.bin
+secure/
+
+# User data: databases, logs, backups (the app keeps these in %APPDATA%\Doseline, never here)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+logs/
+doseline-backup*.json
+doseline-history*.csv
+doseline-report*.pdf
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# Editors and tools
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+.claude/settings.local.json

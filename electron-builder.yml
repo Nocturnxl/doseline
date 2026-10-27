@@ -1,0 +1,44 @@
+appId: com.doseline.app
+productName: Doseline
+copyright: Copyright © 2026 Doseline
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - resources/**
+  - package.json
+  - '!**/*.map'
+  - '!resources/*.svg'
+  - '!node_modules/better-sqlite3/{src,deps,docs,benchmark,test}/**'
+  - '!node_modules/better-sqlite3/prebuilds/{darwin,linux,linuxmusl}-*'
+  - '!node_modules/better-sqlite3/prebuilds/win32-arm64*'
+  - '!node_modules/better-sqlite3/build/**'
+asarUnpack:
+  - resources/**
+  - '**/*.node'
+# better-sqlite3 v13 ships N-API prebuilds, which are ABI-stable across Node and Electron,
+# so no native rebuild is needed when packaging (see DECISIONS.md).
+npmRebuild: false
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  executableName: Doseline
+nsis:
+  artifactName: ${productName}-Setup-${version}.${ext}
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Doseline
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+portable:
+  artifactName: ${productName}-${version}-Portable.${ext}

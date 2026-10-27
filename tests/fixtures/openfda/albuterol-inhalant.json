@@ -1,0 +1,85 @@
+{
+  "status": 200,
+  "body": {
+    "meta": {
+      "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+      "terms": "https://open.fda.gov/terms/",
+      "license": "https://open.fda.gov/license/",
+      "last_updated": "2026-10-23"
+    },
+    "results": [
+      {
+        "term": "630208",
+        "count": 24
+      },
+      {
+        "term": "2123072",
+        "count": 19
+      },
+      {
+        "term": "2123111",
+        "count": 17
+      },
+      {
+        "term": "351136",
+        "count": 16
+      },
+      {
+        "term": "351137",
+        "count": 16
+      },
+      {
+        "term": "801092",
+        "count": 6
+      },
+      {
+        "term": "801095",
+        "count": 5
+      },
+      {
+        "term": "245314",
+        "count": 3
+      },
+      {
+        "term": "1049633",
+        "count": 2
+      },
+      {
+        "term": "1870230",
+        "count": 2
+      },
+      {
+        "term": "198039",
+        "count": 2
+      },
+      {
+        "term": "211874",
+        "count": 2
+      },
+      {
+        "term": "212033",
+        "count": 2
+      },
+      {
+        "term": "2123076",
+        "count": 2
+      },
+      {
+        "term": "310519",
+        "count": 2
+      },
+      {
+        "term": "859088",
+        "count": 2
+      },
+      {
+        "term": "1049906",
+        "count": 1
+      },
+      {
+        "term": "1870225",
+        "count": 1
+      }
+    ]
+  }
+}

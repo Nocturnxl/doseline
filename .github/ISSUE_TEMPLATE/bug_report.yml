@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in Doseline doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+
+        **Privacy:** this repository is public. Do **not** post your real medication names, doses, schedules or history, and do not attach logs, backups, exports or screenshots that contain them. Describe the problem with made-up examples (for example "a med every 8 hours"), or use **Load demo data** in the developer tools to reproduce it. Never post OAuth client secrets or tokens.
+
+        Security problems: please report privately instead (see SECURITY.md).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add a medication taken at 08:00 and 20:00
+        2. Put the PC to sleep at 07:50 and wake it at 09:00
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Doseline version
+      description: Shown in Settings → About.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: Install type
+      options:
+        - Installer (Doseline-Setup)
+        - Portable exe
+        - Built from source
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+  - type: dropdown
+    id: google
+    attributes:
+      label: Is Google Calendar connected?
+      options:
+        - "No"
+        - "Yes"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log lines (optional, redacted)
+      description: |
+        Logs are in %APPDATA%\Doseline\logs. Doseline avoids logging medication names, but check before pasting and remove anything personal.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included real medication data, personal health information, or credentials in this report.
+          required: true

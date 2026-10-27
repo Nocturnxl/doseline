@@ -1,0 +1,59 @@
+{
+  "name": "doseline",
+  "productName": "Doseline",
+  "version": "1.0.0",
+  "description": "Personal medication tracker with local alarms and Google Calendar sync",
+  "homepage": "https://github.com/Nocturnxl/doseline#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nocturnxl/doseline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nocturnxl/doseline/issues"
+  },
+  "author": "Nocturnxl",
+  "license": "MIT",
+  "private": true,
+  "main": "out/main/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.core.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:live": "vitest run --config vitest.live.config.mts",
+    "coverage": "vitest run --coverage",
+    "postinstall": "electron-builder install-app-deps",
+    "dist": "npm run build && electron-builder --win nsis portable --publish never",
+    "start": "electron-vite preview"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "luxon": "3.7.2"
+  },
+  "devDependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/luxon": "3.7.6",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "@vitest/coverage-v8": "5.0.5",
+    "electron": "44.9.3",
+    "electron-builder": "26.18.0",
+    "electron-vite": "6.0.0",
+    "lucide-react": "1.61.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "allowScripts": {
+    "electron@44.9.3": true,
+    "better-sqlite3@13.0.3": false,
+    "electron-winstaller@5.4.0": true
+  }
+}
